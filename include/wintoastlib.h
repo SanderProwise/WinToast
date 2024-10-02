@@ -24,7 +24,7 @@
 #ifndef WINTOASTLIB_H
 #define WINTOASTLIB_H
 
-#include <Windows.h>
+#include <windows.h>
 #include <sdkddkver.h>
 #include <WinUser.h>
 #include <ShObjIdl.h>
