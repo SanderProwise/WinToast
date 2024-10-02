@@ -27,12 +27,12 @@
 #include <windows.h>
 #include <sdkddkver.h>
 #include <winuser.h>
-#include <ShObjIdl.h>
+#include <shobjidl.h>
 #include <wrl/implements.h>
 #include <wrl/event.h>
 #include <windows.ui.notifications.h>
 #include <strsafe.h>
-#include <Psapi.h>
+#include <psapi.h>
 #include <shlobj.h>
 #include <roapi.h>
 #include <propvarutil.h>
