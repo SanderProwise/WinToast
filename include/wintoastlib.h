@@ -26,14 +26,14 @@
 
 #include <windows.h>
 #include <sdkddkver.h>
-#include <WinUser.h>
+#include <winuser.h>
 #include <ShObjIdl.h>
 #include <wrl/implements.h>
 #include <wrl/event.h>
 #include <windows.ui.notifications.h>
 #include <strsafe.h>
 #include <Psapi.h>
-#include <ShlObj.h>
+#include <shlobj.h>
 #include <roapi.h>
 #include <propvarutil.h>
 #include <functiondiscoverykeys.h>
@@ -60,11 +60,11 @@ namespace WinToastLib {
             TimedOut          = ToastDismissalReason::ToastDismissalReason_TimedOut
         };
 
-        virtual ~IWinToastHandler()                                      = default;
-        virtual void toastActivated() const                              = 0;
-        virtual void toastActivated(int actionIndex) const               = 0;
-        virtual void toastDismissed(WinToastDismissalReason state) const = 0;
-        virtual void toastFailed() const                                 = 0;
+        virtual ~IWinToastHandler()                                = default;
+        virtual void toastActivated()                              = 0;
+        virtual void toastActivated(int actionIndex)               = 0;
+        virtual void toastDismissed(WinToastDismissalReason state) = 0;
+        virtual void toastFailed()                                 = 0;
     };
 
     class WinToastTemplate {
